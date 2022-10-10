@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main>
+        <!-- Nav Bar-->
+        <nav class="navBar">
+            <h1>Abhijit Salunkhe Portfolio</h1>
+            <div class="navigationMenu">
+                <a href="#aboutMe">About</a>
+                <a href="#skills">Skill</a>
+                <a href="#projects">Project</a>
+                <a href="#contactForm">Let's connect</a>
+            </div>
+        </nav>
+
+        <!-- Section -->
+        <section class="heroSection">
+            <img class="profileImage" src="./images/avtar.png" alt="avtar.png">
+            <div class="herosectionDetails">
+                <h1>Abhijit Salunkhe</h1>
+                <h3>Full-Stack Web Developer</h3>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="aboutMe" id="aboutMe">
+            <h1>What I Do...</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias libero, 
+                ratione corrupti sed voluptatem eius rem soluta minus inventore eaque qui, sequi 
+                cum assumenda ea perspiciatis delectus quae totam tempora consequatur minima, 
+                aut vero? Eius, dignissimos tenetur veritatis numquam dicta itaque maiores! Earum 
+                tenetur esse fuga repellendus est, vel eaque! Necessitatibus delectus fuga enim 
+                dignissimos, similique accusantium natus temporibus ut itaque sit animi voluptas 
+                quos distinctio consequatur culpa ipsam libero autem nesciunt, ad ratione iusto 
+                error. Non corporis libero fugiat sapiente! Sunt officia ut reiciendis, aliquam tenetur 
+                amet excepturi nihil ipsum fugit dolorum. Ipsum molestias pariatur voluptas ullam officia!</p>
+        </section>
+
+        <!-- Skills and Projects -->
+        <section class="skillandProjects">
+            <!-- Skills -->
+            <div class="skills" id="skills">
+                <h1 class="cardHeading">Skills</h1>
+                <img src="./images/html.png" title="html" alt="img.png">
+                <img src="./images/css.png" title="css" alt="img.png">
+                <img src="./images/javascript.png" title="javascript" alt="img.png">
+                <img src="./images/nodejs.png" title="node.js" alt="img.png">
+                <img src="./images/reactjs.png" title="React" alt="img.png">
+                <img src="./images/mongodb.png" title="MongoDb" alt="img.png">
+                <img src="./images/firebase.png" title="Firebase" alt="img.png">
+                <img src="./images/redux.png" title="Redux" alt="img.png">
+            </div>
+
+            <!-- Projects -->
+            <div class="projects" id="projects">
+                <h1 class="cardHeading">Projects</h1>
+                <!-- Project-1 -->
+                <div class="projectContainer">
+                    <img src="./images/css.png" alt="img.png">
+                    <div class="projectDescription">
+                        <h4>Project Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, rem.</p>
+                    </div>
+                </div>
+                <!-- Project-2 -->
+                <div class="projectContainer">
+                    <img src="./images/css.png" alt="img.png">
+                    <div class="projectDescription">
+                        <h4>Project Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, rem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contactForm" id="contactForm">
+            <h1>Let's Connect</h1>
+            <div class="formGroup">
+                <label for="name">Enter Full Name</label><br>
+                <input type="text" id="name" placeholder="Full name">
+            </div>
+            <div class="formGroup">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" placeholder="Email">
+            </div>
+            <div class="formGroup">
+                <label for="name">Message</label><br>
+                <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+            </div>
+            <button class="submitButton" onclick={submit()}>Connect</button>
+        </section>
+    </main>
+</body>
+</html>
